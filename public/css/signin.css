@@ -1,27 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-*{
-    margin: 10;
-    padding: 10;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
 
-body{
+
+/*body{
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f1f2f4;
-}
+    background-color: #000000;
+}*/
 
 .container{
     position: relative;
     max-width: 430px;
     width: 100%;
-    background: #fff;
+    background: rgb(255, 255, 255);
     border-radius: 10px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 10px rgba(108, 108, 108, 0.89);
     overflow: hidden;
     margin: 0 20px;
 }
@@ -44,12 +39,12 @@ body{
 
 .container.active .login{
     margin-left: -50%;
-    opacity: 0;
+    opacity: 1;
     transition: margin-left 0.18s ease, opacity 0.15s ease;
 }
 
 .container .signup{
-    opacity: 0;
+    opacity: 1; /* It was 0 :") */
     transition: opacity 0.09s ease;
 }
 .container.active .signup{

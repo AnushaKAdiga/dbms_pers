@@ -82,7 +82,7 @@ db.connect(function(err){
 const routes = require('./server/routes/user');
 app.use('/',routes);
 app.use('/auth',require('./server/routes/auth'));
-app.get('/signup',routes);
+app.use('/signup',routes);
 /*
 app.get('/q', (req,res)=>{
     const q="select * from department";

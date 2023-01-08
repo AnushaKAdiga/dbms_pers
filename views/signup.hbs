@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+  
+  
+    <!--
+    <div class="container">
+      <div class="forms">
+        <div class="form login">
+          <span class="title">Login</span>
+
+          <form action="#">
+            <div class="input-field">
+              <input type="text" placeholder="Email" required />
+              <i class=" uil-envelope-alt"></i>
+            </div>
+
+            <div class="input-field">
+              <input
+                type="password"
+                class="password"
+                placeholder="Password"
+                required
+              />
+              <i class="uil uil-lock icon"></i>
+              <i class="uil uil-eye-slash showHidePw"></i>
+            </div>
+
+            
+            <div class="input-field button">
+              <input type="button" value="Login" />
+            </div>
+          </form>
+
+          <div class="login-signup">
+            <span class="text"
+              >Don't have an account?
+              <a href="#" class="text signup-link">Signup </a>
+            </span>
+          </div>
+        </div>
+a-->
+        <!-- Registration Form -->
+        <div class="form signup">
+          <span class="title">Registration</span>
+
+          <form action="/auth/register" method="POST">
+            <div class="input-field">
+                <input type="tel" placeholder="Student ID" name="std_id"required />
+                <i class="uil-postcard"></i>
+              </div>
+
+            <div class="input-field">
+              <input type="text" placeholder="Username" name="name" required />
+              <i class="uil uil-user"></i>
+            </div>
+
+            <div class="input-field">
+                <input type="tel" placeholder="SR Number" name="sr_no" required />
+                <i class=" uil-desktop"></i>
+              </div>
+
+            <div class="input-field">
+              <input type="text" placeholder="Email" name="email"required />
+              <i class="uil uil-envelope icon"></i>
+            </div>
+
+            <div class="input-field">
+                <input type="tel" placeholder="Phone Number" name="phone"required />
+                <i class=" uil-phone"></i>
+              </div>
+
+            <div class="input-field">
+              <input
+                type="password"
+                class="password"
+                placeholder="Create Password"
+                required
+              />
+              <i class="uil uil-lock icon"></i>
+            </div>
+
+            <div class="input-field">
+              <input
+                type="password"
+                class="password"
+                name="password"
+                placeholder="Confirm Password"
+                required
+              />
+              <i class="uil uil-lock icon"></i>
+              <i class="uil uil-eye-slash showHidePw"></i>
+            </div>
+
+            <button class="input-field button"  type="submit" value="Signup">
+              Sign Up
+            </button>
+
+          </form>
+
+          <div class="login-signup">
+            <span class="text"
+              >Already have an account?
+              <a href="#" class="text login-link">Login </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="javascript.js"></script>
+  </body>
+</html>

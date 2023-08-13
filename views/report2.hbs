@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <nav>
+        <a href=""><img src="https://aerojcteam.github.io/aerojc-website/assets/img/JSSSTU.png"/></a>
+    </nav>
+    <style>
+    table,th,td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        width: 5px; 
+       }
+       table{
+        box-sizing: border-box;
+        text-indent: initial;
+        border-spacing: 3px;
+       }
+     
+    th,td {
+        padding: 20px; 
+       }
+        tr{
+            text-align: center;
+            font-size:23px ;
+        }
+       
+      th{
+        font-weight: 1000;
+        font-size:30px ;
+     }
+     nav{
+        display:flex;
+        padding: 2% 9%;
+        justify-content:space-between;
+        align-items:center;
+     }
+     nav img{
+      width:150px;
+     }
+    
+    </style>
+</head>
+ 
+<body>
+    {{!-- {{#each rows}} --}}
+    <table style="width:80%; margin-left:10%; margin-top: auto;">
+        
+        <thead >
+            {{!-- <th>Sl no</th> --}}
+             <th>Student ID</th>
+            <th>Student Name</th>
+           
+            <th>Phone No</th>
+            <th>Email</th>
+        </th>
+        {{#each rows}}
+        <tr>
+            <td>{{this.Student_id}}</td>
+            <td>{{this.student_name}}</td>
+            
+            <td>{{this.user_phone_no}}</td>
+            <td>{{this.user_email}}</td>
+        
+        </tr>
+        {{/each}}
+    </table>
+    {{!-- {{/each}} --}}
+</body>
+ 
+</html>

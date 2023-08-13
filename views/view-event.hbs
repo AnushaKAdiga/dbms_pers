@@ -1,0 +1,85 @@
+{{!-- <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/admintable">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">View Event</li>
+  </ol>
+</nav>
+
+<div class="view-user p-5">
+  {{#each rows}}
+  <div class="row mb-5">
+    <div class="col text-center">
+      <h3>{{this.Event_Name}} </h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Event Name</th>
+            <th scope="col">Event head id</th>
+            <th scope="col">Venue</th>
+            <th scope="col">Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">{{this.Event_Name}}</th>
+            <td>{{this.Event_head_id}}</td>
+            <td>{{this.Venue}}</td>
+            <td>{{this.Date}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="row">
+      <div class="col">
+        <b>Decription</b>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        {{this.description}}
+      </div>
+    </div>
+  </div>
+  {{/each}}
+</div> --}}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Event Details</title>
+    <link rel="stylesheet" href="../css/eventdetails.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="Body">
+
+    <section class="detail">
+      {{#each rows}}
+      <div class="main">
+        <img src="{{this.image_url}}" />
+        <div class="info">
+          <h1>{{this.Event_Name}}</h1>
+          {{!-- <h3>Google Developer Student Clubs</h3> --}}
+          <p>
+            {{this.description}}<br><br><b>Date:</b>{{this.Date}}<br/>
+            {{!-- <b>Time</b>: 5:30 p.m<br /> --}}
+            <b>Venue</b>: {{this.Venue}}
+          </p>
+         
+        </div>
+      </div>
+  {{/each}}
+
+    </section>
+  </body>
+</html>

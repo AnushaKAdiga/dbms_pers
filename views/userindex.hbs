@@ -1,0 +1,113 @@
+
+
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Events</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/events1.css" />
+  </head>
+  <body>
+    <div class="topnav">
+     
+        <img src="../images/logo.jpg" height="45px" width="140px" style="padding-top:10px"  />
+         {{!-- <div class="topnav"> --}}
+          {{!-- <a href="/index">EVENTS</a> --}}
+          {{!-- <a href="/login">USER</a> --}}
+          {{!-- <a href="/home">LOGOUT</a>
+           <a href="/myevents/{{this.Student_id}}" >MY EVENTS</a> --}}
+          {{!-- <a href="/logina">ADMIN</a> --}}
+          <a href="/userindex">EVENTS</a>
+          <a class="active" href="/user">Home</a>
+        {{!-- </div> --}}
+      
+    </div>
+  
+  <div class="events">
+    <h1 class="title">Upcoming events</h1>
+    
+              {{#each rows}}
+
+      <div class="row">
+        {{!-- {{#each rows}} --}}
+        {{!-- {{#each rows}} --}}
+      <div class="events-column" style="margin-left:10px; margin-right:10px;">
+                
+
+         <div class="image" style="border-radius:10px">
+          {{!-- <img src="../images/gdsc.png" style="border-radius:20px"> --}}
+         
+             <img id="img" src="{{this.image_url}}" style="border-radius:20px" alt="pic">
+
+          
+         
+         </div>
+        <div class="layer" >
+         
+          <h3>{{this.Event_Name}}</h3>
+          <div class="details1">
+           <p><b>
+            VENUE</b>:{{this.Venue}}
+
+           </p> 
+
+          </div>
+          <div class="details2">
+             <a target="_blank" href="/view-event/{{this.Event_ID}}" id="linkto">
+             <p><b>DATE:</b>{{this.Date}}</p>
+             </a>
+          </div>
+
+          <div class="details3" >
+            
+    <a type="button" href="/eventregister/{{this.Event_ID}}">
+    <button type="button" class="button">
+      Register
+
+    </button>
+
+    {{!-- <div class="button">
+	Register
+</div> --}}
+</a>
+<a href="/report1/{{this.Event_ID}}"  >View</a>
+{{!-- //<div class="button" href="/eventregister/{{this.Event_ID}}">Register</div> --}}
+
+          </div>
+
+
+          </div>
+        </div>
+        
+      </div>
+      {{/each}}
+       {{!-- {{/each}} --}}
+      </div>
+             {{!-- {{/each}} --}}
+
+      
+</body>     
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

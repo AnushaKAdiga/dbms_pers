@@ -1,0 +1,19 @@
+.table-bordered{
+    width:100%; 
+    border-collapse:collapse; 
+}
+.table-bordered td{ 
+    padding:7px; border:#4e95f4 1px solid;
+}
+/* Define the default color for all the table rows */
+.table-bordered tr{
+    background: #ffffff;
+}
+/* Define the hover highlight color for the table row */
+.table-bordered tr:hover {
+      background-color: #bdb8b3;
+}
+.har{
+    background-color: #1f3165;
+
+}

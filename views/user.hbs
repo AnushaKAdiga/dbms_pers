@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User Page</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initaial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/user.css">
+</head>
+<body>
+    <section class="header"> 
+	<nav>
+        <a 
+          ><img
+            src="../images/logo.jpg"
+        /></a>
+        {{#each rows}}
+		<div class="user">
+			<p>👤Hi {{this.student_name}}!</p>
+		</div>
+        <div class="nav-links">
+          <ul>
+            <li><a href="/user">HOME</a></li>
+            <li><a href="/userindex">EVENTS</a></li>
+            <li>
+                <a href="/myevents/{{this.Student_id}}" >MY EVENTS</a>
+            </li>
+            <li><a href="/home">LOGOUT</a></li>
+          </ul>
+        </div>
+      </nav>
+
+        {{/each}}
+	  <div class="test-box">
+        <h1>SCHEDULE EVENTS!</h1>
+        <p>
+          Register yourselves and be a part of any event you wish to attend.
+        </p>
+        <a href="/userindex" class="hero-btn"><b>Upcoming Events</b></a>
+      </div>
+    </section>
+
+
+</body>
+</html>

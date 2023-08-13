@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" />  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../css/report1.css" />
+</head>
+<body>
+    {{!-- {{#each rows}} --}}
+    <div class="box">  
+        {{#each rows}}
+            <div class="field" style="background-color: white; color:black; padding: 10px;">
+                
+            <div class="begin" style="font-size:smaller">This is your ticket.<br>Present it at the event</div>
+            <h1>{{this.Event_Name}}</h1>
+            <p>  {{this.description}}<br><br><b>Date:</b>{{this.Date}}<br/>
+                
+                <b>Venue</b>:{{this.Venue}}<br>
+               
+                
+
+        </div>
+        {{/each}}
+</body>
